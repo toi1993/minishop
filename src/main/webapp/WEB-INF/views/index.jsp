@@ -7,14 +7,5 @@
     <title>Insert title here</title>
 </head>
 <body>
-${tendangnhap}
-<br/>
-
-<%
-    String ten = (String) request.getAttribute("tendangnhap");
-    String mk = (String) request.getAttribute("matkhau");
-%>
-<%= ten%>
-<%= mk%>
 </body>
 </html>
