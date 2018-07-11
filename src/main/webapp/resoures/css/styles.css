@@ -1,3 +1,102 @@
-#id-boby{
-    background-color: #00909c;
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
+
+html body {
+    font-family: "Roboto";
+}
+
+/* css trang chu*/
+.header {
+    height: 662px;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+    ), url("../image/background_trangchu.jpg") no-repeat center center;
+}
+
+.none_nav {
+    background: none !important;
+    border: none !important;
+}
+
+.navbar-nav a {
+    color: white !important;
+}
+
+.navbar-center {
+    margin-left: 25% !important;
+}
+
+.active a {
+    color: #000000 !important;
+    font-weight: bold;
+    background: none !important;
+}
+
+.dropdown-menu a {
+    color: #000000 !important;
+}
+
+.envent-header {
+    text-align: center;
+    margin-top: 261px;
+}
+
+.envent-header span {
+    color: white;
+    font-size: 20px;
+}
+
+.envent-header h2 {
+    color: white;
+    font-size: 50px;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .navbar-center {
+        margin-left: 0% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-center {
+        margin-left: 8% !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+}
+
+#info {
+    text-align: center;
+    margin-top: 48px;
+}
+
+#info span {
+    margin-top: 16px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.sanpham img{
+    height: 256px;
+    margin-top: 46px;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 305px;
+    text-align: center;
+    font-weight: bold;
+}
+/* css trang chu*/

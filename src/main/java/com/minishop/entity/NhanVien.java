@@ -1,55 +1,43 @@
 package com.minishop.entity;
 
-import java.util.List;
+import javax.persistence.*;
 
 /**
  * @author ToiTD
  */
+@Entity
+@Table(name = "nhanvien")
 public class NhanVien {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int idNhanVien;
+
+    @Column(name = "tenNhanVien")
     private String tenNhanVien;
-    private String diaChi;
+
+    @Column(name = "tuoi")
     private int tuoi;
-    private GiamDoc giamDoc;
-    private List<String> list;
+
+    @Column(name = "address")
+    private String address;
 
     public NhanVien() {
-
     }
 
-    public NhanVien(GiamDoc giamDoc) {
-
-    }
-
-    public NhanVien(String tenNhanVien, String diaChi, int tuoi) {
+    public NhanVien(int idNhanVien, String tenNhanVien, int tuoi, String address) {
+        this.idNhanVien = idNhanVien;
         this.tenNhanVien = tenNhanVien;
-        this.diaChi = diaChi;
         this.tuoi = tuoi;
+        this.address = address;
     }
 
-    public NhanVien(String tenNhanVien, String diaChi) {
-        this.tenNhanVien = tenNhanVien;
-        this.diaChi = diaChi;
+    public int getIdNhanVien() {
+        return idNhanVien;
     }
 
-    public NhanVien creatNhanVien() {
-        NhanVien nhanVien = new NhanVien();
-        nhanVien.setTenNhanVien("abc");
-        return nhanVien;
-    }
-
-
-    public void getThongBao() {
-        System.out.println("Hello ban" + tenNhanVien);
-        System.out.println("Hello ban" + tuoi);
-    }
-
-    public List<String> getList() {
-        return list;
-    }
-
-    public void setList(List<String> list) {
-        this.list = list;
+    public void setIdNhanVien(int idNhanVien) {
+        this.idNhanVien = idNhanVien;
     }
 
     public String getTenNhanVien() {
@@ -60,14 +48,6 @@ public class NhanVien {
         this.tenNhanVien = tenNhanVien;
     }
 
-    public String getDiaChi() {
-        return diaChi;
-    }
-
-    public void setDiaChi(String diaChi) {
-        this.diaChi = diaChi;
-    }
-
     public int getTuoi() {
         return tuoi;
     }
@@ -76,12 +56,11 @@ public class NhanVien {
         this.tuoi = tuoi;
     }
 
-    public GiamDoc getGiamDoc() {
-        return giamDoc;
+    public String getAddress() {
+        return address;
     }
 
-    public void setGiamDoc(GiamDoc giamDoc) {
-        this.giamDoc = giamDoc;
+    public void setAddress(String address) {
+        this.address = address;
     }
-
 }
