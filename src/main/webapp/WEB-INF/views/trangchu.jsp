@@ -53,7 +53,7 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-        <div class="envent-header">
+        <div class="envent-header wow">
             <div class="container">
                 <div class="row">
                     <span>Ngày 17/10 - 23//2018</span>
@@ -62,7 +62,7 @@
                     <h2>Mua 1 TẶNG 1</h2>
                 </div>
                 <div class="row">
-                    <button>XEM NGAY</button>
+                    <button class="button-xemngay">XEM NGAY</button>
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
             <div class="col-sm-12 col-sm-4 col-md-4">
                 <img class="icon" src="<c:url value='/resoures/image/icon_conheo.png'/> "/><br/>
                 <span>TIẾT KIỆM CHI PHÍ</span><br/>
-                <h6>Cam kết giá rẻ nhất </h6>
+                <h6>Cam kết giá rẻ nhất Việt Nam giúp các bạn tiết kiệm hơn 20% cho sản phẩm </h6>
             </div>
             <div class="col-sm-12 col-sm-4 col-md-4">
                 <img  class="icon" src="<c:url value='/resoures/image/icon_giaohang.png'/> "/><br/>
@@ -89,29 +89,130 @@
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <h2>SẢN PHẨM HOT</h2>
+    <div id="title-sanpham" class="container">
+        <span>SẢN PHẨM HÓT</span>
         <div class="row">
-            <div class="col-xs-2 col-sm-4 col-md-3 sanpham">
-                <img src="<c:url value= '/resoures/image/1%20(2).jpg'/> "/>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
             </div>
-            <div class="col-xs-2 col-sm-4 col-md-3 sanpham">
-                <img src="<c:url value= '/resoures/image/1%20(3).jpg'/> "/>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
             </div>
-            <div class="col-xs-2 col-sm-4 col-md-3 sanpham">
-                <img src="<c:url value= '/resoures/image/1%20(5).jpg'/> "/>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
             </div>
-            <div class="col-xs-2 col-sm-4 col-md-3 sanpham ">
-                <img src="<c:url value= '/resoures/image/1%20(7).jpg'/> "/>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="border-sanpham">
+                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
+                    <span>Áo sơ mi</span><br/>
+                    <span class="gia">150.000VND</span>
+                </div>
             </div>
         </div>
     </div>
     <%--End content--%>
 
     <%--Start footer--%>
-    <div>
-
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <p><span>THÔNG TIN SẢN PHẨM</span></p>
+                    <h5>YaMe cam kết chất lượng cho tất cả sản phẩm bán tại cửa hàng </h5>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <p><span>LIÊN HỆ</span></p>
+                    <h5>YaMe Q.10: 770F, Sư Vạn Hạnh (nd), P.12</h5>
+                    <h5>(028) 7307 1441</h5>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="noidung">
+                        <p><span>GÓP Ý</span></p>
+                        <form action="" method="post">
+                            <input name="name" type="text" placeholder="Email"
+                                   style="margin-bottom: 10px; width: 100%;height: 35px"/><br/>
+                            <textarea name="age" style="margin-bottom: 10px; width: 100%" rows="4" cols="50" placeholder="Nội Dung"
+                                      class="text-noidung"></textarea><br/>
+                            <button class="material-button" type="submit">ĐỒNG Ý</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <%--End footer--%>
 

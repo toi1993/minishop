@@ -88,15 +88,78 @@ html body {
     font-weight: bold;
 }
 
-.sanpham img{
-    height: 256px;
-    margin-top: 46px;
-    width: 100%;
+#title-sanpham {
+    text-align: center;
+    margin-top: 75px;
+
 }
 
-h2 {
-    margin-top: 305px;
-    text-align: center;
+#title-sanpham span {
+    font-size: 30px;
     font-weight: bold;
 }
+
+.sanpham {
+    height: 256px;
+    margin-top: 16px;
+}
+
+.border-sanpham {
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    margin: 40px 16px 8px 8px;
+    padding-bottom: 16px;
+
+}
+
+.gia {
+    font-size: 14px !important;
+    color: red;
+}
+
+#footer {
+    margin-top: 50px;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+    ), url("../image/background_footer.jpg") no-repeat center center;
+    color: white;
+    padding: 32px;
+}
+
+#footer span {
+    font-size: 25px;
+}
+
+#footer p {
+    text-align: center;
+}
+
+.noidung .email {
+    width: 100%;
+    color: #EAEAEA;
+    margin-bottom: 10px;
+}
+
+.noidung .text-noidung {
+    color: #EAEAEA;
+    width: 100%;
+}
+.material-button{
+    height: 38px;
+    border: none;
+    width: 100%;
+    background: #00909C;
+    box-shadow: 0px 2px 4px 0px #9d9d9d;
+}
+.button-xemngay{
+    height: 38px;
+    border: none;
+    width: 10%;
+    background: #00B2BF;
+    box-shadow: 0px 2px 2px 0px #9d9d9d;
+}
+
+
 /* css trang chu*/
