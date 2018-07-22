@@ -14,9 +14,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/")
 public class TrangChuController {
 
-    @Autowired
-    private SessionFactory sessionFactory;
-
     @Transactional
     @GetMapping
     public String defauil() {

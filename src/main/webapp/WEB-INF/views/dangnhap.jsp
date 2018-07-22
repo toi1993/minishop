@@ -7,12 +7,5 @@
 </head>
 <body>
 
-<%--foreach--%>
-<c:forEach items="${listNhanVien}" var="nv">
-    <c:out value="${nv.tenNhanVien}"/><br/>
-    <c:out value="${nv.tuoi}"/>
-</c:forEach>
-
-<%--End foreach--%>
 </body>
 </html>
