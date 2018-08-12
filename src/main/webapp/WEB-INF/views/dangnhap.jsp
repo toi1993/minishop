@@ -6,6 +6,11 @@
     <jsp:include page="header.jsp"/>
 </head>
 <body>
-
+    <form method="post" action="">
+       Email: <input type="text" name="tendangnhap" value=""/> <b/>
+       Pass: <input type="password" name="matkhau" value=""/>
+        <button type="submit" class="btn btn-default">Submit</button>
+        <span>${kiemtradangnhap}</span>
+    </form>
 </body>
 </html>

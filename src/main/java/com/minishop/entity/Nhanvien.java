@@ -14,7 +14,7 @@ import java.io.Serializable;
  * @author HP 8300
  */
 @Entity
-@Table(catalog = "dbminishop", schema = "")
+@Table(name ="nhanvien")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Nhanvien.findAll", query = "SELECT n FROM Nhanvien n")

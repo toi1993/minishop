@@ -44,7 +44,7 @@
                         <li><a href="#">LIÊN HỆ</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">ĐĂNG NHẬP</a></li>
+                        <li><a href="dangnhap/">ĐĂNG NHẬP</a></li>
                         <li><a href="#">ĐĂNG KÝ</a></li>
                         <li>
                             <a href="#"><img src="<c:url value='/resoures/image/ic_shopping_cart_white_24dp_1x.png'/> "></a>
