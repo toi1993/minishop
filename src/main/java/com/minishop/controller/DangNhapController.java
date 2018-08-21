@@ -28,7 +28,6 @@ public class DangNhapController {
     @Autowired
     private NhanVienService nhanVienService;
 
-
     @PostMapping
     @Transactional
     public String xuLyDangNhap(@RequestParam("tendangnhap") String tendangnhap, @RequestParam("matkhau") String matKhau,ModelMap modelMap) {
@@ -38,6 +37,7 @@ public class DangNhapController {
         } else {
             modelMap.addAttribute("kiemtradangnhap","that bai");
         }
+        
         return "dangnhap";
     }
 }

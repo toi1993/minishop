@@ -90,98 +90,19 @@
         </div>
     </div>
     <div id="title-sanpham" class="container">
-        <span>SẢN PHẨM HÓT</span>
+        <h3>SẢN PHẨM HÓT</h3>
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
+            <c:forEach var="itemSanPham" items="${sanphamList}">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a href="/chitiet/?maSanPham=${itemSanPham.masanpham}">
+                        <div class="border-sanpham">
+                            <img class="sanpham" src="<c:url value= '/resoures/image/${itemSanPham.hinhsanpham}'/> "><br/>
+                            <span>${itemSanPham.tensanpham}</span><br/>
+                            <span class="gia">${itemSanPham.giatien} VNĐ</span>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="border-sanpham">
-                    <img class="sanpham" src="<c:url value= '/resoures/image/1%20(5).jpg'/> "><br/>
-                    <span>Áo sơ mi</span><br/>
-                    <span class="gia">150.000VND</span>
-                </div>
-            </div>
+            </c:forEach>
         </div>
     </div>
     <%--End content--%>
